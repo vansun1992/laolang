@@ -2,10 +2,7 @@ import BLOG from '@/blog.config'
 import DarkModeButton from '@/components/DarkModeButton'
 
 export const Footer = (props) => {
-  const d = new Date()
-  const currentYear = d.getFullYear()
-  const startYear = BLOG.SINCE && BLOG.SINCE !== currentYear && BLOG.SINCE + '-'
-
+  
   return <footer className="w-full bg-white px-6 border-t dark:border-hexo-black-gray dark:bg-hexo-black-gray ">
         <DarkModeButton className='text-center pt-4'/>
 
@@ -17,7 +14,7 @@ export const Footer = (props) => {
                 {BLOG.BEI_AN && (<a href="https://beian.miit.gov.cn/" className="text-black dark:text-gray-200 no-underline hover:underline ml-4">{BLOG.BEI_AN} </a>)}
                 <span className='dark:text-gray-200 no-underline ml-4'>
                     Powered by
-                    <a href="https://github.com/tangly1024/NotionNext" className=' hover:underline'> NotionNext {BLOG.VERSION}  </a>
+                    <a href="" className=' hover:underline'> 老派浪漫之必要  </a>
                 </span>
             </div>
         </div>
