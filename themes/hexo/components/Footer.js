@@ -16,4 +16,3 @@ const Footer = ({ title }) => {
   )
 }
 
-export default Footer
